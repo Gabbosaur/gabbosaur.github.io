@@ -68,3 +68,5 @@ function consoleText(words, id, colors) {
         }
     }, 400)
 }
+
+console.log("There is nothing interesting to see here. LUL")
