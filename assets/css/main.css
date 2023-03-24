@@ -2385,6 +2385,10 @@ input, select, textarea {
 			font-style: italic;
 		}
 
+		ul.feature-icons li div.description span {
+			font-style: normal;
+		}
+
 		ul.feature-icons li div.date {
 			font-size: small;
 			font-style: italic;
