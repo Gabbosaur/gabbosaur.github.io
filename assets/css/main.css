@@ -1759,6 +1759,16 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	article .image.custom img {
+		width: 100%; /* Make the image responsive */
+		max-width: 100%; /* Set a maximum width to control its size */
+		aspect-ratio: 16 / 9; /* Force a 16:9 aspect ratio */
+		object-fit: contain; /* Crop the image to fit the aspect ratio */
+		object-position: center; /* Center the image */
+		display: block; /* Ensure proper alignment */
+		border-radius: 8px; /* Optional: Add rounded corners for aesthetics */
+	}
+
 	header p {
 		color: #4D4F53;
 		position: relative;
