@@ -2690,8 +2690,9 @@ input, select, textarea {
 		.features article .image {
 			display: inline-block;
 			vertical-align: middle;
-			width: 48%;
+			width: 35%;
 			overflow: hidden;
+			border-radius: 8px;
 		}
 
 			.features article .image img {
@@ -2708,7 +2709,7 @@ input, select, textarea {
 		.features article .inner {
 			display: inline-block;
 			vertical-align: middle;
-			width: 50%;
+			width: 63%;
 			padding-left: 2.5em;
 		}
 
@@ -3504,3 +3505,256 @@ input, select, textarea {
   color: mediumturquoise;
   font-weight: 500;
 }
+/* Modern Card Design */
+.feature-icons li {
+	transition: all 0.3s ease !important;
+	padding: 12px 12px 12px 80px !important;
+	margin: 5px 0 !important;
+	border-radius: 12px !important;
+	background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%) !important;
+	border: 1px solid #e9ecef !important;
+	position: relative !important;
+	overflow: hidden !important;
+}
+
+.feature-icons li:hover {
+	transform: translateY(-5px) !important;
+	box-shadow: 0 10px 30px rgba(50, 103, 163, 0.15) !important;
+	border-color: #3267a3 !important;
+	background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
+}
+
+.feature-icons li:before {
+	left: 18px !important;
+	top: 12px !important;
+	z-index: 2 !important;
+	box-shadow: 0 4px 12px rgba(50, 103, 163, 0.3) !important;
+}
+
+.feature-icons li .title {
+	margin-bottom: 4px;
+	color: #2E2D29;
+	font-weight: 600;
+	font-size: 1.1em;
+}
+
+.feature-icons li .description {
+	color: #6c757d;
+	line-height: 1.6;
+	font-size: 0.95em;
+}
+
+.feature-icons li .date {
+	color: #3267a3;
+	font-weight: 500;
+	font-size: 0.9em;
+	margin-top: 2px;
+}
+
+/* Navigation hover effects */
+#header > nav {
+	overflow-x: hidden;
+}
+
+#header > nav ul li a {
+	transition: all 0.3s ease;
+	position: relative;
+}
+
+#header > nav ul li a:hover {
+	transform: translateX(10px);
+}
+
+/* Project cards hover effects */
+#portfolio .container {
+	overflow: visible !important;
+}
+
+.features {
+	padding: 20px !important;
+	overflow: visible !important;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+	margin: 0 !important;
+}
+
+@media screen and (min-width: 1025px) {
+	.features {
+		grid-template-columns: 1fr 1fr;
+		gap: 24px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.features {
+		gap: 30px;
+	}
+}
+
+.features article .image img {
+	height: 180px !important;
+	object-fit: contain !important;
+	width: 100% !important;
+	border-radius: 8px !important;
+}
+
+@media screen and (min-width: 768px) {
+	.features article .image img {
+		height: 200px !important;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.features article .image img {
+		height: 160px !important;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.features article .image img {
+		height: 180px !important;
+	}
+}
+
+.features article {
+	transition: all 0.3s ease;
+	padding: 12px;
+	margin: 0;
+	border-radius: 12px;
+	background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+	border: 1px solid #e9ecef;
+	position: relative;
+	overflow: hidden;
+}
+
+.features article:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 10px 30px rgba(50, 103, 163, 0.15);
+	border-color: #3267a3;
+	background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.features article .date {
+	color: #3267a3;
+	font-weight: 500;
+	font-size: 0.9em;
+	margin-bottom: 4px;
+	font-style: italic;
+}
+
+.features article .badge {
+	background: linear-gradient(135deg, #ffd700, #ffed4e);
+	color: #8b6914;
+	font-size: 0.6em;
+	font-weight: 600;
+	padding: 1px 4px;
+	border-radius: 8px;
+	font-style: normal;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	margin-left: 0;
+}
+
+.features article h4 {
+	padding-right: 160px;
+	padding-top: 18px;
+}
+
+.features article .badge.personal {
+	background: linear-gradient(135deg, #4facfe, #00f2fe);
+	color: #0d4f6c;
+}
+
+.features article .badge.university {
+	background: linear-gradient(135deg, #a8edea, #fed6e3);
+	color: #2d5a87;
+}
+
+.features article .badge.hackathon {
+	background: linear-gradient(135deg, #667eea, #764ba2);
+	color: #ffffff;
+}
+
+.features article .badge.finalist {
+	background: linear-gradient(135deg, #ff9a9e, #fecfef);
+	color: #8b2635;
+}
+
+.features article .badge.winner {
+	background: linear-gradient(135deg, #ffd700, #ffed4e);
+	color: #8b6914;
+	top: 8px;
+	right: 90px;
+}
+
+@media screen and (min-width: 1280px) {
+	.features article .badge.winner {
+		right: 110px;
+	}
+}
+
+/* Button hover enhancements */
+.button, input[type="submit"], input[type="reset"], input[type="button"] {
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Social icons pulse effect */
+.icons li a {
+	transition: all 0.3s ease;
+}
+
+.icons li a:hover {
+	transform: scale(1.2);
+	color: #3267a3 !important;
+}
+
+/* Misc section styling */
+#misc ul {
+	list-style: none;
+	padding: 0;
+}
+
+#misc ul li {
+	transition: all 0.3s ease;
+	padding: 12px 12px 12px 50px;
+	margin: 8px 0;
+	border-radius: 12px;
+	background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+	border: 1px solid #e9ecef;
+	position: relative;
+	color: #6c757d;
+	line-height: 1.6;
+}
+
+#misc ul li:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px rgba(50, 103, 163, 0.15);
+	border-color: #3267a3;
+	background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+#misc ul li:before {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	position: absolute;
+	left: 18px;
+	top: 12px;
+	color: #3267a3;
+	font-size: 1.1em;
+}
+
+#misc ul li:nth-child(1):before { content: '\f21b'; } /* shield-alt for ethical hacking */
+#misc ul li:nth-child(2):before { content: '\f1b9'; } /* car for electric mobility */
+#misc ul li:nth-child(3):before { content: '\f030'; } /* camera for photography */
+#misc ul li:nth-child(4):before { content: '\f70c'; } /* dumbbell for calisthenics */
+#misc ul li:nth-child(5):before { content: '\f004'; } /* heart for memes and dogs */
+#misc ul li:nth-child(6):before { content: '\f04b'; } /* play for youtuber */
