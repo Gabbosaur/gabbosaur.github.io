@@ -1,1 +1,22 @@
-{"name":"Gabriele Guo - Portfolio","short_name":"Gabriele Guo","icons":[{"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"theme_color":"#ffffff","background_color":"#ffffff","display":"standalone"}
+{
+  "name": "Gabriele Guo - Software Engineer & AI Specialist",
+  "short_name": "Gabriele Guo",
+  "description": "Portfolio of Gabriele Guo, Software Engineer at Ericsson specializing in AI and cloud-native applications",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#3267a3",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
