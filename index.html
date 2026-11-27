@@ -1,15 +1,10 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 
 <head>
-	<title>Gabriele Guo - Software Engineer & AI Specialist</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Gabriele Guo - Software Engineer & AI Specialist</title>
 
 	<!-- SEO Meta Tags -->
 	<meta name="description"
@@ -38,18 +33,35 @@
 		content="Software Engineer at Ericsson specializing in AI, cloud-native applications, and human-computer interaction." />
 	<meta name="twitter:image" content="https://gabbosaur.github.io/images/propic.jpg" />
 
-	<!-- Additional SEO -->
-	<meta name="theme-color" content="#3267a3" />
+	<meta name="theme-color" content="#0c0c10" />
 	<meta name="google-site-verification" content="hGFgB-qnBKFbF_xeb8oBxmBT4nqaUQogI1t_5D5H09I" />
+
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 	<link rel="manifest" href="site.webmanifest">
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/custom.css" />
+	<!-- Apply saved theme before first paint to avoid flashes -->
+	<script>
+		(function () {
+			try {
+				var t = localStorage.getItem('theme');
+				if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+				document.documentElement.setAttribute('data-theme', t);
+			} catch (e) { }
+			document.documentElement.classList.add('js');
+		})();
+	</script>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/css/style.css" />
 
 	<!-- Structured Data (JSON-LD) -->
 	<script type="application/ld+json">
@@ -78,482 +90,673 @@
 	</script>
 </head>
 
-<body class="is-preload">
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
 
-	<!-- Header -->
-	<section id="header">
-		<header>
-			<span class="image avatar"><img src="images/propic.jpg" alt="profile picture" /></span>
-			<h1 id="logo"><a href="#">Gabriele Guo</a></h1>
-			<p>Creative software engineer<br>passionate about AI</p>
-		</header>
-		<nav id="nav">
-			<ul>
-				<li><a href="#education">Education</a></li>
-				<li><a href="#skills">Technical Skills</a></li>
-				<li><a href="#work">Work Experience</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#misc">Misc</a></li>
-			</ul>
-		</nav>
-		<footer>
-			<ul class="icons">
-				<li><a href="mailto:gabriele.guo@gmail.com" class="icon solid fa-envelope"><span
-							class="label">Email</span></a></li>
-				<li><a href="https://github.com/Gabbosaur" class="icon brands fa-github" target="_blank"
-						rel="noopener noreferrer"><span class="label">Github</span></a></li>
-				<li><a href="https://www.linkedin.com/in/gabrieleguo" class="icon brands fa-linkedin" target="_blank"
-						rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-				<li><a href="https://www.facebook.com/Gabbosaur" class="icon brands fa-facebook-f" target="_blank"
-						rel="noopener noreferrer"><span class="label">Facebook</span></a></li>
-				<li><a href="https://www.instagram.com/gabbosaur" class="icon brands fa-instagram" target="_blank"
-						rel="noopener noreferrer"><span class="label">Instagram</span></a></li>
-			</ul>
-		</footer>
-	</section>
-
-	<!-- Wrapper -->
-	<div id="wrapper">
-
-		<!-- Main -->
-		<div id="main">
-
-			<!-- About -->
-			<section id="about">
-				<div class="image main" data-position="center">
-					<img src="images/lighttrail.jpg" alt="Light trail photography background" />
-				</div>
-				<div class="container">
-					<header class="major">
-						<div class='console-container'><span id='text'></span>
-							<div class='console-underscore' id='console'>&#95;</div>
-						</div>
-						<p class="brief">I am a computer engineer with a creative mind, very curious about technologies
-							and
-							looking forward to build something that
-							improves everyone's life.<br>My primary career interests lies in <strong>AI</strong> and
-							<strong>human-computer interaction</strong>.<br>
-							Right now I am working as a R&D software engineer at <a href="http://www.ericsson.com"
-								target="_blank" rel="noopener noreferrer"> Ericsson</a> company.<br>
-							If you're curious to know more, just contact
-							me through <a href="https://www.linkedin.com/in/gabrieleguo" target="_blank"
-								rel="noopener noreferrer">LinkedIn</a> or
-							by <a href="mailto:gabriele.guo@gmail.com">e-mail</a>!
-						</p>
-					</header>
-				</div>
-			</section>
-
-			<!-- Education -->
-			<section id="education">
-				<div class="container">
-					<h3>Education</h3>
-					<ul class="feature-icons">
-						<li class="icon solid fa-user-graduate">
-							<div class="title">
-								Università degli Studi di Genova <span style="font-weight: normal;">(<a
-										href="https://unige.it/" target="_blank"
-										rel="noopener noreferrer">UniGe</a>)</span>
-							</div>
-							<div class="description">
-								M.Sc. in Computer Engineering | Sept. 2019 ― June 2022
-							</div>
-							<div class="description">
-								Thesis: <span>"Artificial Intelligence Techniques Applied to
-									Movement Analysis and Planning to
-									Support Fitness Activities"
-								</span> (<a
-									href="http://www.star.dist.unige.it/~marco/Data/Master_Thesis_Rebagliati.pdf"
-									target="_blank" rel="noopener noreferrer">pdf ITA</a>)
-							</div>
-						</li>
-						<li class="icon solid fa-user-graduate">
-
-							<div class="title">
-								Università degli Studi di Genova <span style="font-weight: normal;">(<a
-										href="https://unige.it/" target="_blank"
-										rel="noopener noreferrer">UniGe</a>)</span>
-							</div>
-							<div class="description">
-								B.Sc. in Computer Engineering | Sept. 2014 ― Mar. 2019
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-
-			<!-- Skills -->
-			<section id="skills">
-				<div class="container">
-					<h3>Technical skills</h3>
-					<ul class="feature-icons">
-						<li class="icon solid fa-code">
-							<div class="title">
-								Programming
-							</div>
-							<div class="description">
-								Python, Java, C/C++, Dart, MATLAB
-							</div>
-						</li>
-						<li class="icon fa-brain">
-							<div class="title">
-								Artificial intelligence
-							</div>
-							<div class="description">
-								Machine Learning, Large Language Models, RAG, Computer Vision, PDDL, ASP
-							</div>
-						</li>
-						<li class="icon fa-desktop">
-							<div class="title">
-								Web development
-							</div>
-							<div class="description">
-								HTML, CSS, JavaScript, D3.js, React, SQL, Streamlit<br>
-								Git, Web Analytics
-							</div>
-						</li>
-						<li class="icon fa-cogs">
-							<div class="title">
-								DevOps & CI/CD
-							</div>
-							<div class="description">
-								Jenkins, Spinnaker, Docker, Kubernetes, Prometheus, Grafana
-							</div>
-						</li>
-						<li class="icon fa-vr-cardboard">
-							<div class="title">
-								Human-computer interaction
-							</div>
-							<div class="description">
-								Motion analysis, face recognition, AR/VR
-							</div>
-						</li>
-						<li class="icon fa-mobile-alt">
-							<div class="title">
-								Mobile development
-							</div>
-							<div class="description">
-								Flutter
-							</div>
-						</li>
-
-						<li class="icon fa-object-group">
-							<div class="title">
-								UI/UX design
-							</div>
-							<div class="description">
-								Wireframing & prototyping, Photoshop
-							</div>
-						</li>
-						<li class="icon fa-camera">
-							<div class="title">
-								Photography
-							</div>
-							<div class="description">
-								Portraits, Lightroom
-							</div>
-						</li>
-						<li class="icon fa-video">
-							<div class="title">
-								Videomaking
-							</div>
-							<div class="description">
-								Premiere Pro, After Effects
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-
-
-			<!-- Work -->
-			<section id="work">
-				<div class="container">
-					<h3>Work experience</h3>
-					<ul class="feature-icons">
-						<li class="icon fa-building">
-							<div class="title">
-								R&D Software engineer <span style="font-weight: normal;">@ <a
-										href="https://www.ericsson.com/" target="_blank"
-										rel="noopener noreferrer">Ericsson</a></span>
-							</div>
-							<div class="date">
-								Apr 2022 ― present
-							</div>
-							<div class="description">
-								- Developing cloud-native applications and microservices<br>
-								- DevOps methodology with <a href="https://www.docker.com/" target="_blank"
-									rel="noopener noreferrer">Docker</a> and <a href="https://kubernetes.io/"
-									target="_blank" rel="noopener noreferrer">Kubernetes</a><br>
-								- Internal hackathons bringing AI solutions<br>
-								- Exploring and prototyping AI applications
-							</div>
-						</li>
-						<li class="icon fa-building">
-							<div class="title">
-								Software developer <span style="font-weight: normal;">@ <a href="https://drafintech.it/"
-										target="_blank" rel="noopener noreferrer">Drafintech</a></span>
-							</div>
-							<div class="date">
-								May 2019 ― Aug 2019
-							</div>
-							<div class="description">
-								- Developing mobile apps using <a href="https://flutter.dev/" target="_blank"
-									rel="noopener noreferrer">Flutter</a><br>
-								- Developing websites using <a href="https://angular.io/" target="_blank"
-									rel="noopener noreferrer">Angular</a>
-							</div>
-						</li>
-						<li class="icon fa-building">
-							<div class="title">
-								Internship trainee <span style="font-weight: normal;">@ <a
-										href="http://www.progettoadele.com/" target="_blank"
-										rel="noopener noreferrer">Progetto
-										Adele</a></span>
-							</div>
-							<div class="date">
-								Mar 2018 ― Jul 2018
-							</div>
-							<div class="description">
-								- Knowledge and logistic documents handling using SQL Server, Excel and Access<br>
-								- Developing websites using <a href="https://dotnet.microsoft.com/apps/aspnet"
-									target="_blank" rel="noopener noreferrer">ASP.NET</a>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-
-			<!-- Portfolio -->
-			<section id="portfolio">
-				<div class="container">
-					<h3>Projects</h3>
-				</div>
-				<div class="features">
-					<article>
-						<span class="badge personal">💡 Personal</span>
-						<div class="image"><img src="images/stt-view.png" alt="Saiyan Time Tracker"
-								loading="lazy" /></div>
-						<div class="inner">
-							<h4>Saiyan Time Tracker</h4>
-							<div class="date">Mar 2026</div>
-							<p>Dragon Ball-themed dashboard to track holidays and permits. Features interactive calendar, drag-select, CSV export and auto-save. All data stays local, nothing leaves your browser. Zero dependencies.</p>
-							<div class="links"><a href="https://gabbosaur.github.io/SaiyanTimeTracker/" target="_blank"
-									rel="noopener noreferrer">🎮 Demo</a></div>
-						</div>
-					</article>
-					<article>
-						<span class="badge personal">💡 Personal</span>
-						<div class="image"><img src="images/saiyan-planning-poker.png" alt="Saiyan Planning Poker"
-								loading="lazy" /></div>
-						<div class="inner">
-							<h4>Saiyan Planning Poker</h4>
-							<div class="date">Sep 2025 — Oct 2025</div>
-							<p>A real-time multiplayer planning poker web app with a DBZ theme. Teams can estimate story
-								points using Fibonacci or T-shirt sizing.</p>
-							<div class="links"><a href="https://saiyanplanningpoker.onrender.com/" target="_blank"
-									rel="noopener noreferrer">🎮 Demo</a></div>
-						</div>
-					</article>
-					<article>
-						<span class="badge hackathon">💻 Hackathon</span>
-						<div class="image"><img src="images/fluidcontent-ai.png" alt="FluidContent AI" loading="lazy" />
-						</div>
-						<div class="inner">
-							<h4>FluidContent AI</h4>
-							<div class="date">May 2025 — Jun 2025</div>
-							<p>Transforms standard digital articles into dynamic, personalized, and interactive
-								experiences using AI.</p>
-							<div class="links"><a href="https://www.youtube.com/watch?v=qY5JnxDr8xQ" target="_blank"
-									rel="noopener noreferrer">▶️ Video</a></div>
-						</div>
-					</article>
-					<article>
-						<span class="badge hackathon">💻 Hackathon</span>
-						<span class="badge winner">🏆 Winner</span>
-						<div class="image"><img src="images/smartecoq.png" alt="SmartEcoQ" loading="lazy" /></div>
-						<div class="inner">
-							<h4>SmartEcoQ</h4>
-							<div class="date">Nov 2024 — Dec 2024</div>
-							<p>AI-driven platform powered by IBM watsonx for sustainable large-scale event management.
-							</p>
-							<div class="links"><a href="https://www.youtube.com/watch?v=s3kstgoThhY" target="_blank"
-									rel="noopener noreferrer">▶️ Video</a> <a
-									href="https://www.codemotion.com/magazine/it/dev-life-it/eventi/scopri-i-progetti-del-greencityai-hackathon-x-ibm-watsonx/"
-									target="_blank" rel="noopener noreferrer">📄 Article</a></div>
-						</div>
-					</article>
-					<article>
-						<span class="badge hackathon">💻 Hackathon</span>
-						<span class="badge winner">🏆 Winner</span>
-						<div class="image"><img src="images/airu.png" alt="Airu" loading="lazy" /></div>
-						<div class="inner">
-							<h4>Airu</h4>
-							<div class="date">Oct 2024 — Nov 2024</div>
-							<p>AI-powered companion for managing cloud budgets effectively with agentic chat
-								capabilities.</p>
-							<div class="links"><a href="https://www.youtube.com/watch?v=QxOWbCD9slg" target="_blank"
-									rel="noopener noreferrer">▶️ Video</a> <a
-									href="https://www.aruba.it/magazine/cloud/aruba-premia-airu-assistente-smart.aspx"
-									target="_blank" rel="noopener noreferrer">📄 Article</a></div>
-						</div>
-					</article>
-					<article>
-						<span class="badge hackathon">💻 Hackathon</span>
-						<span class="badge winner">🏆 Winner</span>
-						<div class="image"><img src="images/codeevolver_icon.png" alt="Code Evolver" loading="lazy" />
-						</div>
-						<div class="inner">
-							<h4>Code Evolver</h4>
-							<div class="date">Sep 2024 — Oct 2024</div>
-							<p>AI-powered system for code transformation, enhancement, and testing through iterative
-								improvement.</p>
-							<div class="links"><a href="https://youtu.be/TdrQCxk7xP8" target="_blank"
-									rel="noopener noreferrer">▶️ Video</a> <a
-									href="https://www.almaviva.it/it_IT/news/show-news/3dd1f68f-975c-443d-94f3-65b3ef83c161/"
-									target="_blank" rel="noopener noreferrer">📄 Article</a></div>
-						</div>
-					</article>
-					<article>
-						<span class="badge hackathon">💻 Hackathon</span>
-						<div class="image"><img src="images/mii-guardian.png" alt="MII Guardian" loading="lazy" /></div>
-						<div class="inner">
-							<h4>MII Guardian</h4>
-							<div class="date">Apr 2024 — May 2024</div>
-							<p>Top 3 finalist. Blockchain and computer vision solution to combat counterfeiting with
-								IPZS.</p>
-							<div class="links"><a href="https://www.youtube.com/watch?v=2Iv9G8XpatI" target="_blank"
-									rel="noopener noreferrer">▶️ Video</a> <a
-									href="https://it.linkedin.com/feed/update/urn:li:activity:7199818993552031744"
-									target="_blank" rel="noopener noreferrer">📄 Post</a></div>
-						</div>
-					</article>
-					<article>
-						<span class="badge personal">💡 Personal</span>
-						<div class="image"><img src="images/ssy.jpg" alt="Super Saiyan Yourself" loading="lazy" /></div>
-						<div class="inner">
-							<h4>Super Saiyan Yourself</h4>
-							<div class="date">2022</div>
-							<p>ML demo using Teachable Machine's pose estimation. Transform into a Super Saiyan with
-								your webcam!</p>
-							<div class="links"><a href="https://super-saiyan-yourself.netlify.app/" target="_blank"
-									rel="noopener noreferrer">🎮 Demo</a></div>
-						</div>
-					</article>
-					<article>
-						<span class="badge personal">💡 Personal</span>
-						<div class="image"><img src="images/tpose.jpg" alt="Fitness App" loading="lazy" /></div>
-						<div class="inner">
-							<h4>Fitness App Idea</h4>
-							<div class="date">2022</div>
-							<p>Fitness exercise counter demo developed with Mediapipe for pose detection and tracking.
-							</p>
-							<div class="links"><a href="https://t-pose-detector.netlify.app/" target="_blank"
-									rel="noopener noreferrer">🎮 Demo</a></div>
-						</div>
-					</article>
-					<article>
-						<span class="badge university">🏫 University</span>
-						<div class="image"><img src="images/edurell.jpg" alt="EDURELL" loading="lazy" /></div>
-						<div class="inner">
-							<h4>EDURELL</h4>
-							<div class="date">2021</div>
-							<p>Extracting knowledge from educational videos using Python, OpenCV, scikit-learn, YoloV5,
-								Mediapipe.</p>
-						</div>
-					</article>
-					<article>
-						<span class="badge university">🏫 University</span>
-						<div class="image"><img src="images/orgchart.png" alt="Organization Web App" loading="lazy" />
-						</div>
-						<div class="inner">
-							<h4>Organization Web App</h4>
-							<div class="date">2021</div>
-							<p>GUI to handle company's organization chart for Liguria Digitale. Built with React and
-								Spring Boot.</p>
-						</div>
-					</article>
-					<article>
-						<span class="badge university">🏫 University</span>
-						<div class="image"><img src="images/datavisproject.png" alt="Data Visualization"
-								loading="lazy" /></div>
-						<div class="inner">
-							<h4>Data Visualization</h4>
-							<div class="date">2020</div>
-							<p>Preprocess and visualize datasets using D3.js, a JavaScript library for data
-								visualization.</p>
-							<div class="links"><a href="https://datavis-project.netlify.app/" target="_blank"
-									rel="noopener noreferrer">📊 Demo</a></div>
-						</div>
-					</article>
-					<article>
-						<span class="badge university">🏫 University</span>
-						<div class="image"><img src="images/learningcali.jpg" alt="Learning Calisthenics"
-								loading="lazy" /></div>
-						<div class="inner">
-							<h4>Learning Calisthenics</h4>
-							<div class="date">2020</div>
-							<p>Winning project idea and start-up simulation through Wylab accelerator program.</p>
-							<div class="links"><a
-									href="https://docs.google.com/presentation/d/1kGkI1LGRkNg6IDrp7THmNC7lScc1FCxcB2-rjNm1MUw/edit?usp=sharing"
-									target="_blank" rel="noopener noreferrer">📑 Slides</a> <a
-									href="https://ricerca.repubblica.it/repubblica/archivio/repubblica/2020/06/06/le-idee-dei-ragazzi-diventano-appGenova07.html"
-									target="_blank" rel="noopener noreferrer">📄 Article</a></div>
-						</div>
-					</article>
-				</div>
-			</section>
-
-			<!-- Misc -->
-			<section id="misc">
-				<div class="container">
-					<h3>Misc</h3>
-					<ul>
-						<li>Interested in ethical hacking, occasionally ctf player</li>
-						<li>Interested in electric mobility</li>
-						<li>Amateur photographer <a href="https://www.instagram.com/gabbokeh" target="_blank"
-								rel="noopener noreferrer">Gabbokeh</a></li>
-						<li>Amateur calisthenics athlete</li>
-						<li>I ♡ memes and shiba doggos</li>
-						<li><a href="https://www.youtube.com/channel/UCyrLsT0wUex5i7gk6dW8Cug" target="_blank"
-								rel="noopener noreferrer">Youtuber</a> once a year</li>
-					</ul>
-
-				</div>
-			</section>
-
+	<header class="nav" id="nav">
+		<div class="nav__inner">
+			<a href="./" class="nav__logo">Gabriele Guo</a>
+			<span class="nav__status">Genova, Italy</span>
+			<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
+				<svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="18" height="18"
+					aria-hidden="true">
+					<circle cx="12" cy="12" r="4.5" />
+					<path
+						d="M12 1.5v2.5M12 20v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M1.5 12h2.5M20 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8" />
+				</svg>
+				<svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" width="18" height="18"
+					aria-hidden="true">
+					<path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z" />
+				</svg>
+			</button>
 		</div>
+	</header>
 
-		<!-- Footer -->
-		<section id="footer">
-			<div class="container">
-				<ul class="copyright">
-					<li>&copy; Gabriele Guo</li>
-					<li><i class="fas fa-paw"></i></li>
+	<!-- ================================================================
+	     Overview: the whole story on one screen.
+	     Each tile opens a detail panel (see #panels below).
+	     ================================================================ -->
+	<main id="main" class="bento">
+
+		<!-- Intro -->
+		<article class="tile tile--intro" style="--i: 0">
+			<div class="intro__top">
+				<img class="intro__avatar" src="images/webp/propic.webp" alt="Portrait of Gabriele Guo" width="96"
+					height="96" />
+				<div class="namechip" id="namechip">
+					<button class="namechip__btn" type="button" aria-expanded="false" aria-controls="name-story">
+						<span class="namechip__han" lang="zh-Hans">飞欧</span>
+						<span class="namechip__pinyin">Fēi Ōu</span>
+					</button>
+					<p class="namechip__tip" id="name-story" role="note">
+						<span lang="zh-Hans">飞</span> means "to fly", <span lang="zh-Hans">欧</span> stands for
+						Europe. My grandfather chose it when my parents moved here.
+					</p>
+				</div>
+			</div>
+
+			<div class="intro__hello">
+				<p class="greet" aria-hidden="true">
+					<span class="greet__word" id="greet" lang="en">Hi</span><span class="greet__comma">,</span>
+					<span class="greet__lang" id="greet-lang">EN</span>
+				</p>
+				<h1 class="intro__name"><span class="sr-only">Hi, </span>I'm Gabriele.</h1>
+				<p class="intro__lead">Software engineer at Ericsson. I like mixing technology with everything else I
+					love, from AI to calisthenics.</p>
+			</div>
+
+			<p class="tile__more">More about me <span aria-hidden="true">&#8599;</span></p>
+			<a class="tile__link" href="#about" data-panel="about"><span class="sr-only">Open: more about
+					me</span></a>
+		</article>
+
+		<!-- Journey -->
+		<article class="tile tile--journey" style="--i: 1">
+			<header class="tile__head">
+				<h2 class="tile__label">Journey</h2>
+				<span class="tile__arrow" aria-hidden="true">&#8599;</span>
+			</header>
+			<div class="journey__now">
+				<p class="journey__role">R&amp;D Software Engineer</p>
+				<p class="journey__where">Ericsson &middot; since 2022</p>
+			</div>
+			<ol class="path" aria-label="Milestones">
+				<li><span class="path__year">2014</span><span class="path__what">B.Sc.</span></li>
+				<li><span class="path__year">2018</span><span class="path__what">1st job</span></li>
+				<li><span class="path__year">2019</span><span class="path__what">M.Sc.</span></li>
+				<li class="is-now"><span class="path__year">2022</span><span class="path__what">Ericsson</span></li>
+			</ol>
+			<a class="tile__link" href="#journey" data-panel="journey"><span class="sr-only">Open: my
+					journey</span></a>
+		</article>
+
+		<!-- Projects -->
+		<article class="tile tile--projects" style="--i: 2">
+			<header class="tile__head">
+				<h2 class="tile__label">Projects</h2>
+				<span class="tile__arrow" aria-hidden="true">&#8599;</span>
+			</header>
+			<div class="fan" aria-hidden="true">
+				<span class="fan__card"><img src="images/webp/ssy.webp" alt="" width="960" height="513" /></span>
+				<span class="fan__card"><img src="images/webp/airu.webp" alt="" width="960" height="960" /></span>
+				<span class="fan__card"><img src="images/webp/stt-view.webp" alt="" width="960" height="509" /></span>
+			</div>
+			<p class="tile__foot"><strong>13 cards</strong> in the deck. Pick one.</p>
+			<a class="tile__link" href="#projects" data-panel="projects"><span class="sr-only">Open: projects</span></a>
+		</article>
+
+		<!-- Now building -->
+		<article class="tile tile--now" style="--i: 3">
+			<header class="tile__head">
+				<h2 class="tile__label">Now building</h2>
+				<span class="tile__arrow" aria-hidden="true">&#8599;</span>
+			</header>
+			<svg class="network" viewBox="0 0 200 110" aria-hidden="true">
+				<path d="M20 80 L62 30 L110 62 L150 22 L186 70" />
+				<path d="M62 30 L96 14" />
+				<path d="M110 62 L132 96 L186 70" />
+				<path d="M20 80 L70 96 L110 62" />
+				<circle cx="20" cy="80" r="3.5" /><circle cx="62" cy="30" r="3.5" />
+				<circle cx="110" cy="62" r="4.5" class="hub" /><circle cx="150" cy="22" r="3.5" />
+				<circle cx="186" cy="70" r="3.5" /><circle cx="96" cy="14" r="3" />
+				<circle cx="132" cy="96" r="3" /><circle cx="70" cy="96" r="3" />
+			</svg>
+			<div>
+				<p class="now__title">CaliParksNextGen</p>
+				<p class="now__desc">Connecting calisthenics parks, and the people training in them.</p>
+			</div>
+			<a class="tile__link" href="#caliparks" data-panel="caliparks"><span class="sr-only">Open:
+					CaliParksNextGen</span></a>
+		</article>
+
+		<!-- Passions -->
+		<article class="tile tile--passions" style="--i: 4">
+			<div class="passions__text">
+				<header class="tile__head">
+					<h2 class="tile__label">Passions</h2>
+					<span class="tile__arrow" aria-hidden="true">&#8599;</span>
+				</header>
+				<p class="passions__title">Strength, speed, balance. And a camera to catch it.</p>
+				<ul class="chips" id="passion-chips" aria-label="Passions">
+					<li class="is-on">Calisthenics</li><li>Photography</li><li>Wheels</li><li>Languages</li>
+				</ul>
+			</div>
+			<!-- A camera viewfinder that cycles through my passions on hover, synced with the chips -->
+			<div class="viewfinder" aria-hidden="true">
+				<div class="vf__slide is-current">
+					<svg viewBox="0 0 64 64" class="vf__icon vf__icon--pullup">
+						<path d="M6 10H58" />
+						<g class="vf__body">
+							<path d="M24 10L29 23M40 10L35 23" /><circle cx="32" cy="18" r="4" />
+							<path d="M32 22V40M32 40L27 54M32 40L37 54" />
+						</g>
+					</svg>
+				</div>
+				<div class="vf__slide">
+					<svg viewBox="0 0 64 64" class="vf__icon vf__icon--camera">
+						<rect x="9" y="20" width="46" height="30" rx="6" /><path d="M23 20l4-6h10l4 6" />
+						<circle class="vf__lens" cx="32" cy="35" r="9" /><circle cx="47" cy="27" r="1.5" />
+					</svg>
+				</div>
+				<div class="vf__slide">
+					<svg viewBox="0 0 64 64" class="vf__icon vf__icon--euc">
+						<g class="vf__wheel"><circle cx="32" cy="38" r="16" /><path d="M32 22V54M16 38H48" /></g>
+						<circle cx="32" cy="38" r="5" /><path d="M14 30H22M42 30H50" />
+					</svg>
+				</div>
+				<div class="vf__slide">
+					<svg viewBox="0 0 64 64" class="vf__icon vf__icon--lang">
+						<path d="M8 13H56V41H30L20 51V41H8Z" />
+						<text x="32" y="32" text-anchor="middle" class="vf__hello" id="vf-hello">你好</text>
+					</svg>
+				</div>
+				<span class="viewfinder__tag"><span id="vf-label">Calisthenics</span></span>
+				<span class="viewfinder__count" id="vf-count">01/04</span>
+			</div>
+			<a class="tile__link" href="#passions" data-panel="passions"><span class="sr-only">Open: my passions</span></a>
+		</article>
+
+		<!-- Contact (no panel, acts directly) -->
+		<article class="tile tile--contact" style="--i: 5">
+			<header class="tile__head">
+				<h2 class="tile__label">Say hi</h2>
+			</header>
+			<a class="contact__email" href="mailto:gabriele.guo@gmail.com">gabriele.guo<wbr>@gmail.com</a>
+			<div class="contact__row">
+				<button type="button" class="contact__copy" id="copy-email" data-email="gabriele.guo@gmail.com">Copy
+					email</button>
+				<ul class="contact__socials">
+					<li><a href="https://www.linkedin.com/in/gabrieleguo" target="_blank"
+							rel="noopener noreferrer">LinkedIn</a></li>
+					<li><a href="https://github.com/Gabbosaur" target="_blank" rel="noopener noreferrer">GitHub</a>
+					</li>
+					<li><a href="https://www.instagram.com/gabbosaur" target="_blank"
+							rel="noopener noreferrer">Instagram</a></li>
+				</ul>
+			</div>
+		</article>
+	</main>
+
+	<!-- ================================================================
+	     Detail panels. Without JS they render as normal sections.
+	     ================================================================ -->
+	<div class="overlay" id="overlay">
+		<div class="overlay__backdrop" data-close></div>
+
+		<!-- About -->
+		<section class="panel" id="about" role="dialog" aria-modal="true" aria-labelledby="about-title">
+			<div class="panel__bar">
+				<span class="panel__crumb">About</span>
+				<button class="panel__close" type="button" data-close aria-label="Close">&times;</button>
+			</div>
+			<div class="panel__inner stagger">
+				<div class="about__hero">
+					<figure class="about__photo">
+						<img src="images/propic.jpg" alt="Portrait of Gabriele Guo" width="572" height="572"
+							loading="lazy" />
+					</figure>
+					<h2 class="panel__title" id="about-title" tabindex="-1">Born in Italy, named for Europe.</h2>
+				</div>
+				<p class="panel__lead">I was born in Italy to Chinese parents. My Chinese name is
+					<span lang="zh-Hans">飞欧</span> (Fēi Ōu): <em>to fly</em> and <em>Europe</em>, chosen by my
+					grandfather when my parents moved here.
+				</p>
+				<p>I'm a computer engineer from Genova. Since 2022 I've been an R&amp;D software engineer at
+					<a class="link" href="https://www.ericsson.com" target="_blank" rel="noopener noreferrer">Ericsson</a>,
+					building cloud-native microservices and prototyping AI applications.</p>
+				<p>What I enjoy most is combining my passions with technology. My master's thesis applied AI to movement
+					analysis for fitness, and the project I'm building now connects calisthenics parks around the world.
+				</p>
+
+				<h3 class="panel__h3">Languages</h3>
+				<p class="muted">When I talk to someone in their mother tongue, they open up. I love that moment,
+					so I keep learning languages. It's also why this site greeted you in yours, if I speak it.</p>
+				<ul class="langs">
+					<li style="--v: 1"><span class="langs__name" lang="it">Italiano</span><span class="langs__bar"></span><span class="langs__note">Native</span></li>
+					<li style="--v: .72"><span class="langs__name" lang="zh-Hans">中文</span><span class="langs__bar"></span><span class="langs__note">Fluent everyday speaking, learned at home. Reading and writing are harder.</span></li>
+					<li style="--v: .6"><span class="langs__name">English</span><span class="langs__bar"></span><span class="langs__note">B1–B2, working on the accent</span></li>
+					<li style="--v: .28"><span class="langs__name" lang="es">Español</span><span class="langs__bar"></span><span class="langs__note">Learning now</span></li>
+					<li style="--v: .14"><span class="langs__name" lang="fr">Français</span><span class="langs__bar"></span><span class="langs__note">A1, rusty since school</span></li>
+					<li style="--v: .05"><span class="langs__name" lang="ja">日本語</span><span class="langs__bar"></span><span class="langs__note">On the wishlist, thanks to anime</span></li>
+					<li style="--v: .03"><span class="langs__name"><span lang="ru">Русский</span> &middot; <span lang="tr">Türkçe</span></span><span class="langs__bar"></span><span class="langs__note">A couple of words</span></li>
 				</ul>
 			</div>
 		</section>
 
+		<!-- Journey -->
+		<section class="panel" id="journey" role="dialog" aria-modal="true" aria-labelledby="journey-title">
+			<div class="panel__bar">
+				<span class="panel__crumb">Journey</span>
+				<button class="panel__close" type="button" data-close aria-label="Close">&times;</button>
+			</div>
+			<div class="panel__inner stagger">
+				<h2 class="panel__title" id="journey-title" tabindex="-1">From Genova to Ericsson R&amp;D.</h2>
+
+				<ol class="timeline">
+					<li class="timeline__item is-now">
+						<span class="timeline__when">2022 &ndash; now</span>
+						<div>
+							<h3>R&amp;D Software Engineer <span>Ericsson</span></h3>
+							<p>Cloud-native applications and microservices, DevOps with Docker and Kubernetes,
+								internal hackathons and AI prototypes.</p>
+						</div>
+					</li>
+					<li class="timeline__item">
+						<span class="timeline__when">2019 &ndash; 2022</span>
+						<div>
+							<h3>M.Sc. Computer Engineering <span>University of Genova</span></h3>
+							<p>Thesis on AI techniques for movement analysis and planning in fitness
+								(<a class="link"
+									href="http://www.star.dist.unige.it/~marco/Data/Master_Thesis_Rebagliati.pdf"
+									target="_blank" rel="noopener noreferrer">PDF, Italian</a>).</p>
+						</div>
+					</li>
+					<li class="timeline__item">
+						<span class="timeline__when">2019</span>
+						<div>
+							<h3>Software Developer <span>Drafintech</span></h3>
+							<p>Mobile apps with Flutter and websites with Angular.</p>
+						</div>
+					</li>
+					<li class="timeline__item">
+						<span class="timeline__when">2018</span>
+						<div>
+							<h3>Intern <span>Progetto Adele</span></h3>
+							<p>Document handling with SQL Server, Excel and Access. Websites with ASP.NET.</p>
+						</div>
+					</li>
+					<li class="timeline__item">
+						<span class="timeline__when">2014 &ndash; 2019</span>
+						<div>
+							<h3>B.Sc. Computer Engineering <span>University of Genova</span></h3>
+						</div>
+					</li>
+				</ol>
+
+				<h3 class="panel__h3">Toolbox</h3>
+				<div class="skills">
+					<div>
+						<h4>AI</h4>
+						<p>Machine learning, LLMs &amp; RAG, computer vision, pose estimation, PDDL, ASP</p>
+					</div>
+					<div>
+						<h4>Engineering</h4>
+						<p>Python, Java, C/C++, JavaScript, React, D3.js, Flutter, SQL, Docker, Kubernetes, Jenkins,
+							Spinnaker, Prometheus, Grafana</p>
+					</div>
+					<div>
+						<h4>Creative</h4>
+						<p>UI/UX prototyping, Photoshop, Lightroom, Premiere Pro, After Effects</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects -->
+		<section class="panel panel--wide" id="projects" role="dialog" aria-modal="true"
+			aria-labelledby="projects-title">
+			<div class="panel__bar">
+				<span class="panel__crumb">Projects</span>
+				<button class="panel__close" type="button" data-close aria-label="Close">&times;</button>
+			</div>
+			<div class="panel__inner">
+				<h2 class="panel__title" id="projects-title" tabindex="-1">Pick a card.</h2>
+				<p class="muted deck__legend">Tap a card to flip it.
+					<span><b class="suit suit--h">&hearts;</b> personal</span>
+					<span><b class="suit">&spades;</b> hackathon</span>
+					<span><b class="suit">&clubs;</b> university</span>
+				</p>
+
+				<ul class="deck" id="deck">
+					<li class="pcard pcard--h">
+						<div class="pcard__inner">
+							<button class="pcard__face pcard__front" type="button" data-flip
+								aria-label="Saiyan Time Tracker, personal project, 2026. Flip for details.">
+								<span class="pcard__index"><b>&hearts;</b>2026</span>
+								<span class="pcard__art"><img src="images/webp/stt-view.webp" alt="" loading="lazy" width="960" height="509" /></span>
+								<span class="pcard__name">Saiyan Time Tracker</span>
+							</button>
+							<div class="pcard__face pcard__back">
+								<span class="pcard__meta">Personal &middot; Mar 2026</span>
+								<h3>Saiyan Time Tracker</h3>
+								<p>Dragon Ball-themed dashboard to track holidays and permits. Calendar, drag-select, CSV
+									export. Data never leaves your browser.</p>
+								<p class="pcard__links"><a href="https://gabbosaur.github.io/SaiyanTimeTracker/" target="_blank" rel="noopener noreferrer">Demo</a></p>
+								<button class="pcard__flipback" type="button" data-flip>Flip back</button>
+							</div>
+						</div>
+					</li>
+
+					<li class="pcard pcard--h">
+						<div class="pcard__inner">
+							<button class="pcard__face pcard__front" type="button" data-flip
+								aria-label="Saiyan Planning Poker, personal project, 2025. Flip for details.">
+								<span class="pcard__index"><b>&hearts;</b>2025</span>
+								<span class="pcard__art"><img src="images/webp/saiyan-planning-poker.webp" alt="" loading="lazy" width="680" height="367" /></span>
+								<span class="pcard__name">Saiyan Planning Poker</span>
+							</button>
+							<div class="pcard__face pcard__back">
+								<span class="pcard__meta">Personal &middot; 2025</span>
+								<h3>Saiyan Planning Poker</h3>
+								<p>Real-time multiplayer planning poker with a DBZ theme. Teams estimate with Fibonacci
+									or T-shirt sizes.</p>
+								<p class="pcard__links"><a href="https://saiyanplanningpoker.onrender.com/" target="_blank" rel="noopener noreferrer">Demo</a></p>
+								<button class="pcard__flipback" type="button" data-flip>Flip back</button>
+							</div>
+						</div>
+					</li>
+
+					<li class="pcard">
+						<div class="pcard__inner">
+							<button class="pcard__face pcard__front" type="button" data-flip
+								aria-label="Airu, hackathon winner, 2024. Flip for details.">
+								<span class="pcard__index"><b>&spades;</b>2024</span>
+								<span class="pcard__art"><img src="images/webp/airu.webp" alt="" loading="lazy" width="960" height="960" /></span>
+								<span class="pcard__name">Airu <span class="pcard__badge">Winner</span></span>
+							</button>
+							<div class="pcard__face pcard__back">
+								<span class="pcard__meta">Hackathon winner &middot; 2024</span>
+								<h3>Airu</h3>
+								<p>AI-powered companion for managing cloud budgets, with agentic chat capabilities.</p>
+								<p class="pcard__links">
+									<a href="https://www.youtube.com/watch?v=QxOWbCD9slg" target="_blank" rel="noopener noreferrer">Video</a>
+									<a href="https://www.aruba.it/magazine/cloud/aruba-premia-airu-assistente-smart.aspx" target="_blank" rel="noopener noreferrer">Article</a>
+								</p>
+								<button class="pcard__flipback" type="button" data-flip>Flip back</button>
+							</div>
+						</div>
+					</li>
+
+					<li class="pcard">
+						<div class="pcard__inner">
+							<button class="pcard__face pcard__front" type="button" data-flip
+								aria-label="SmartEcoQ, hackathon winner, 2024. Flip for details.">
+								<span class="pcard__index"><b>&spades;</b>2024</span>
+								<span class="pcard__art"><img src="images/webp/smartecoq.webp" alt="" loading="lazy" width="960" height="960" /></span>
+								<span class="pcard__name">SmartEcoQ <span class="pcard__badge">Winner</span></span>
+							</button>
+							<div class="pcard__face pcard__back">
+								<span class="pcard__meta">Hackathon winner &middot; 2024</span>
+								<h3>SmartEcoQ</h3>
+								<p>AI platform powered by IBM watsonx for sustainable large-scale event management.</p>
+								<p class="pcard__links">
+									<a href="https://www.youtube.com/watch?v=s3kstgoThhY" target="_blank" rel="noopener noreferrer">Video</a>
+									<a href="https://www.codemotion.com/magazine/it/dev-life-it/eventi/scopri-i-progetti-del-greencityai-hackathon-x-ibm-watsonx/" target="_blank" rel="noopener noreferrer">Article</a>
+								</p>
+								<button class="pcard__flipback" type="button" data-flip>Flip back</button>
+							</div>
+						</div>
+					</li>
+
+					<li class="pcard">
+						<div class="pcard__inner">
+							<button class="pcard__face pcard__front" type="button" data-flip
+								aria-label="Code Evolver, hackathon winner, 2024. Flip for details.">
+								<span class="pcard__index"><b>&spades;</b>2024</span>
+								<span class="pcard__art pcard__art--logo"><img src="images/webp/codeevolver_icon.webp" alt="" loading="lazy" width="318" height="318" /></span>
+								<span class="pcard__name">Code Evolver <span class="pcard__badge">Winner</span></span>
+							</button>
+							<div class="pcard__face pcard__back">
+								<span class="pcard__meta">Hackathon winner &middot; 2024</span>
+								<h3>Code Evolver</h3>
+								<p>AI system that transforms, improves and tests code through iterative refinement.</p>
+								<p class="pcard__links">
+									<a href="https://youtu.be/TdrQCxk7xP8" target="_blank" rel="noopener noreferrer">Video</a>
+									<a href="https://www.almaviva.it/it_IT/news/show-news/3dd1f68f-975c-443d-94f3-65b3ef83c161/" target="_blank" rel="noopener noreferrer">Article</a>
+								</p>
+								<button class="pcard__flipback" type="button" data-flip>Flip back</button>
+							</div>
+						</div>
+					</li>
+
+					<li class="pcard">
+						<div class="pcard__inner">
+							<button class="pcard__face pcard__front" type="button" data-flip
+								aria-label="FluidContent AI, hackathon project, 2025. Flip for details.">
+								<span class="pcard__index"><b>&spades;</b>2025</span>
+								<span class="pcard__art pcard__art--logo"><img src="images/webp/fluidcontent-ai.webp" alt="" loading="lazy" width="512" height="512" /></span>
+								<span class="pcard__name">FluidContent AI</span>
+							</button>
+							<div class="pcard__face pcard__back">
+								<span class="pcard__meta">Hackathon &middot; 2025</span>
+								<h3>FluidContent AI</h3>
+								<p>Turns standard articles into personalized, interactive experiences using AI.</p>
+								<p class="pcard__links"><a href="https://www.youtube.com/watch?v=qY5JnxDr8xQ" target="_blank" rel="noopener noreferrer">Video</a></p>
+								<button class="pcard__flipback" type="button" data-flip>Flip back</button>
+							</div>
+						</div>
+					</li>
+
+					<li class="pcard">
+						<div class="pcard__inner">
+							<button class="pcard__face pcard__front" type="button" data-flip
+								aria-label="MII Guardian, hackathon top 3, 2024. Flip for details.">
+								<span class="pcard__index"><b>&spades;</b>2024</span>
+								<span class="pcard__art"><img src="images/webp/mii-guardian.webp" alt="" loading="lazy" width="705" height="705" /></span>
+								<span class="pcard__name">MII Guardian <span class="pcard__badge pcard__badge--alt">Top 3</span></span>
+							</button>
+							<div class="pcard__face pcard__back">
+								<span class="pcard__meta">Hackathon top 3 &middot; 2024</span>
+								<h3>MII Guardian</h3>
+								<p>Blockchain and computer vision against counterfeiting, built with IPZS.</p>
+								<p class="pcard__links">
+									<a href="https://www.youtube.com/watch?v=2Iv9G8XpatI" target="_blank" rel="noopener noreferrer">Video</a>
+									<a href="https://it.linkedin.com/feed/update/urn:li:activity:7199818993552031744" target="_blank" rel="noopener noreferrer">Post</a>
+								</p>
+								<button class="pcard__flipback" type="button" data-flip>Flip back</button>
+							</div>
+						</div>
+					</li>
+
+					<li class="pcard pcard--h">
+						<div class="pcard__inner">
+							<button class="pcard__face pcard__front" type="button" data-flip
+								aria-label="Super Saiyan Yourself, personal project, 2022. Flip for details.">
+								<span class="pcard__index"><b>&hearts;</b>2022</span>
+								<span class="pcard__art"><img src="images/webp/ssy.webp" alt="" loading="lazy" width="960" height="513" /></span>
+								<span class="pcard__name">Super Saiyan Yourself</span>
+							</button>
+							<div class="pcard__face pcard__back">
+								<span class="pcard__meta">Personal &middot; 2022</span>
+								<h3>Super Saiyan Yourself</h3>
+								<p>Pose estimation with Teachable Machine. Strike the pose on your webcam and go Super
+									Saiyan.</p>
+								<p class="pcard__links"><a href="https://super-saiyan-yourself.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a></p>
+								<button class="pcard__flipback" type="button" data-flip>Flip back</button>
+							</div>
+						</div>
+					</li>
+
+					<li class="pcard pcard--h">
+						<div class="pcard__inner">
+							<button class="pcard__face pcard__front" type="button" data-flip
+								aria-label="Fitness rep counter, personal project, 2022. Flip for details.">
+								<span class="pcard__index"><b>&hearts;</b>2022</span>
+								<span class="pcard__art"><img src="images/webp/tpose.webp" alt="" loading="lazy" width="960" height="536" /></span>
+								<span class="pcard__name">Fitness rep counter</span>
+							</button>
+							<div class="pcard__face pcard__back">
+								<span class="pcard__meta">Personal &middot; 2022</span>
+								<h3>Fitness rep counter</h3>
+								<p>Exercise counter built with Mediapipe pose detection and tracking.</p>
+								<p class="pcard__links"><a href="https://t-pose-detector.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a></p>
+								<button class="pcard__flipback" type="button" data-flip>Flip back</button>
+							</div>
+						</div>
+					</li>
+
+					<li class="pcard">
+						<div class="pcard__inner">
+							<button class="pcard__face pcard__front" type="button" data-flip
+								aria-label="EDURELL, university project, 2021. Flip for details.">
+								<span class="pcard__index"><b>&clubs;</b>2021</span>
+								<span class="pcard__art"><img src="images/webp/edurell.webp" alt="" loading="lazy" width="960" height="540" /></span>
+								<span class="pcard__name">EDURELL</span>
+							</button>
+							<div class="pcard__face pcard__back">
+								<span class="pcard__meta">University &middot; 2021</span>
+								<h3>EDURELL</h3>
+								<p>Extracting knowledge from educational videos with OpenCV, scikit-learn, YOLOv5 and
+									Mediapipe.</p>
+								<button class="pcard__flipback" type="button" data-flip>Flip back</button>
+							</div>
+						</div>
+					</li>
+
+					<li class="pcard">
+						<div class="pcard__inner">
+							<button class="pcard__face pcard__front" type="button" data-flip
+								aria-label="Organization chart app, university project, 2021. Flip for details.">
+								<span class="pcard__index"><b>&clubs;</b>2021</span>
+								<span class="pcard__art pcard__art--light"><img src="images/webp/orgchart.webp" alt="" loading="lazy" width="626" height="593" /></span>
+								<span class="pcard__name">Org chart app</span>
+							</button>
+							<div class="pcard__face pcard__back">
+								<span class="pcard__meta">University &middot; 2021</span>
+								<h3>Organization chart app</h3>
+								<p>GUI to manage the company org chart for Liguria Digitale, built with React and Spring
+									Boot.</p>
+								<button class="pcard__flipback" type="button" data-flip>Flip back</button>
+							</div>
+						</div>
+					</li>
+
+					<li class="pcard">
+						<div class="pcard__inner">
+							<button class="pcard__face pcard__front" type="button" data-flip
+								aria-label="Data visualization, university project, 2020. Flip for details.">
+								<span class="pcard__index"><b>&clubs;</b>2020</span>
+								<span class="pcard__art"><img src="images/webp/datavisproject.webp" alt="" loading="lazy" width="960" height="525" /></span>
+								<span class="pcard__name">Data visualization</span>
+							</button>
+							<div class="pcard__face pcard__back">
+								<span class="pcard__meta">University &middot; 2020</span>
+								<h3>Data visualization</h3>
+								<p>Preprocessing and interactive visualization of datasets with D3.js.</p>
+								<p class="pcard__links"><a href="https://datavis-project.netlify.app/" target="_blank" rel="noopener noreferrer">Demo</a></p>
+								<button class="pcard__flipback" type="button" data-flip>Flip back</button>
+							</div>
+						</div>
+					</li>
+
+					<li class="pcard">
+						<div class="pcard__inner">
+							<button class="pcard__face pcard__front" type="button" data-flip
+								aria-label="Learning Calisthenics, university project, 2020. Flip for details.">
+								<span class="pcard__index"><b>&clubs;</b>2020</span>
+								<span class="pcard__art"><img src="images/webp/learningcali.webp" alt="" loading="lazy" width="734" height="477" /></span>
+								<span class="pcard__name">Learning Calisthenics</span>
+							</button>
+							<div class="pcard__face pcard__back">
+								<span class="pcard__meta">University &middot; 2020</span>
+								<h3>Learning Calisthenics</h3>
+								<p>Winning project idea and start-up simulation in the Wylab accelerator program.</p>
+								<p class="pcard__links">
+									<a href="https://docs.google.com/presentation/d/1kGkI1LGRkNg6IDrp7THmNC7lScc1FCxcB2-rjNm1MUw/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Slides</a>
+									<a href="https://ricerca.repubblica.it/repubblica/archivio/repubblica/2020/06/06/le-idee-dei-ragazzi-diventano-appGenova07.html" target="_blank" rel="noopener noreferrer">Article</a>
+								</p>
+								<button class="pcard__flipback" type="button" data-flip>Flip back</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- CaliParksNextGen -->
+		<section class="panel" id="caliparks" role="dialog" aria-modal="true" aria-labelledby="caliparks-title">
+			<div class="panel__bar">
+				<span class="panel__crumb">Now building</span>
+				<button class="panel__close" type="button" data-close aria-label="Close">&times;</button>
+			</div>
+			<div class="panel__inner stagger">
+				<p class="pill"><span class="dot" aria-hidden="true"></span>Prototype</p>
+				<h2 class="panel__title" id="caliparks-title" tabindex="-1">CaliParksNextGen</h2>
+				<p class="panel__lead">Connecting public calisthenics parks to each other, so people can train
+					together, meet, and build communities and challenges across the world.</p>
+				<p>Calisthenics is part of my life, and I've seen how a pull-up bar in a public park turns
+					strangers into friends. CaliParksNextGen puts technology, AI and connectivity behind that
+					feeling.</p>
+
+				<ul class="pillars">
+					<li>
+						<h3>Train together</h3>
+						<p>Work out with people at other parks, wherever they are.</p>
+					</li>
+					<li>
+						<h3>Meet</h3>
+						<p>Find the people who train at your park and the parks near you.</p>
+					</li>
+					<li>
+						<h3>Community &amp; challenges</h3>
+						<p>Grow communities around parks and challenge each other across cities.</p>
+					</li>
+				</ul>
+
+				<p class="muted">Want to try it, or build it with me? <a class="link"
+						href="mailto:gabriele.guo@gmail.com?subject=CaliParksNextGen">Let's talk.</a></p>
+			</div>
+		</section>
+
+		<!-- Passions -->
+		<section class="panel" id="passions" role="dialog" aria-modal="true" aria-labelledby="passions-title">
+			<div class="panel__bar">
+				<span class="panel__crumb">Passions</span>
+				<button class="panel__close" type="button" data-close aria-label="Close">&times;</button>
+			</div>
+			<div class="panel__inner stagger">
+				<h2 class="panel__title" id="passions-title" tabindex="-1">The things that make me, me.</h2>
+
+				<ul class="hobbies">
+					<li>
+						<h3>Calisthenics</h3>
+						<p>Part of my daily life, and the reason I'm building CaliParksNextGen.</p>
+					</li>
+					<li>
+						<h3>Photography</h3>
+						<p>Portraits, mostly. My photos live at <a class="link" href="https://gabbokeh.netlify.app/"
+								target="_blank" rel="noopener noreferrer">Gabbokeh</a>.</p>
+					</li>
+					<li>
+						<h3>Videomaking</h3>
+						<p>Telling stories with a camera in motion. <a class="link"
+								href="https://www.youtube.com/channel/UCyrLsT0wUex5i7gk6dW8Cug" target="_blank"
+								rel="noopener noreferrer">YouTuber</a> about once a year.</p>
+					</li>
+					<li>
+						<h3>Cardistry</h3>
+						<p>Card flourishes. Yes, that's why the projects are a deck.</p>
+					</li>
+					<li>
+						<h3>Speed &amp; balance</h3>
+						<p>Electric unicycle, motorbikes, sports cars and skiing. On one wheel, two, four or
+							none at all.</p>
+					</li>
+					<li>
+						<h3>New tech</h3>
+						<p>Always trying the latest thing, and turning ideas into demos at hackathons.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
 	</div>
 
-	<!-- Scripts -->
+	<footer class="footer">
+		<span>&copy; <span id="year">2026</span> Gabriele Guo</span>
+		<span>Made in Genova</span>
+	</footer>
+
+	<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+	<!-- Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EELCWWDL3Q"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-
 		gtag('config', 'G-EELCWWDL3Q');
 	</script>
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="assets/js/myjs.js"></script>
-
+	<script src="assets/js/app.js" defer></script>
 </body>
 
 </html>
